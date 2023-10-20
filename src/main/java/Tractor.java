@@ -1,8 +1,7 @@
 import java.awt.*;
-import java.awt.geom.AffineTransform;
 import java.awt.geom.Arc2D;
 
-public class Tractor {
+public class Tractor implements DrawInt {
     private int x;
     private int y;
     private int width;
@@ -39,7 +38,7 @@ public class Tractor {
         this.height = height;
     }
 
-    void draw(final Graphics gr) {
+    public void draw (final Graphics gr) {
         Graphics2D g = (Graphics2D) gr;
         g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
